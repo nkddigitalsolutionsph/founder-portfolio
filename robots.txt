@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://founder.nkddigitalsolutions.com/sitemap.xml
