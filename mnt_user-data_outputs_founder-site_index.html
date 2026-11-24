@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Norine Kim Dowing | Founder & Lead SEO Strategist, NKD Digital Solutions PH</title>
+<meta name="description" content="Search intelligence, journalism-grade content, and conversion web architecture for growing brands. Founder of NKD Digital Solutions PH.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#141218; --muted:#5e5a68; --line:#e4e1ea; --soft:#f6f4fa;
+  --purple:#6d3fc0; --purple-deep:#3f1f7a; --sheen:linear-gradient(100deg,#3f1f7a 0%,#8c5fe0 38%,#c9b3f5 52%,#7a4bd0 68%,#3f1f7a 100%);
+  --serif:"Fraunces",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0c0a10;--ink:#f3f0f8;--muted:#a9a3b8;--line:#2a2535;--soft:#15121c;--purple:#a885ee;--purple-deep:#c9b3f5;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.7rem,3.4vw,2.4rem)/1.15 var(--serif);margin:0 0 12px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 36px}
+
+/* Hero */
+.hero{padding:88px 0 80px;border-top:0}
+.badge{display:inline-block;font:700 .78rem/1 var(--sans);letter-spacing:.08em;padding:10px 14px;border:1px solid var(--purple);border-radius:999px;color:var(--purple)}
+h1{font:700 clamp(3rem,10vw,6.6rem)/.98 var(--serif);letter-spacing:-.03em;margin:28px 0 24px;background:var(--sheen);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite alternate}
+@keyframes sheen{to{background-position:100% 0}}
+.sub{font:500 clamp(1.2rem,2.2vw,1.55rem)/1.4 var(--serif);max-width:30em;margin:0 0 20px}
+.bio{color:var(--muted);max-width:60ch;margin:0 0 36px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:15px 24px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--ink);transition:background .2s,color .2s}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.primary:hover{background:var(--purple-deep);border-color:var(--purple-deep);color:#fff}
+.btn.ghost:hover{background:var(--soft)}
+
+/* Background */
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--purple)}
+.timeline li{padding:0 0 28px 24px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--purple)}
+.when{font-weight:700;color:var(--purple)}
+.role{font:700 1.15rem/1.3 var(--serif);margin:2px 0 4px}
+.timeline p{margin:0;color:var(--muted);max-width:62ch}
+.edu{margin-top:8px;padding:18px 22px;background:var(--soft);border-radius:12px}
+
+/* Philosophy */
+.quote{font:500 clamp(1.4rem,3vw,2rem)/1.3 var(--serif);max-width:24em;margin:0 0 20px}
+.philo p{max-width:62ch;color:var(--muted)}
+
+/* Cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{text-align:left;font:inherit;color:inherit;background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:26px;cursor:pointer;transition:border-color .2s,transform .2s;display:block;width:100%}
+.card:hover{border-color:var(--purple);transform:translateY(-3px)}
+.card h3{font:700 1.2rem/1.3 var(--serif);margin:0 0 8px}
+.card .tag{color:var(--purple);font-weight:700;font-size:.9rem}
+.card p{margin:8px 0 0;color:var(--muted);font-size:.95rem}
+.sample{text-decoration:none;display:block}
+.sample .go{display:inline-block;margin-top:14px;font-weight:700;color:var(--purple)}
+
+/* Tools */
+.tools{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tools div{border-top:3px solid var(--purple);padding-top:14px}
+.tools h3{font:700 1.1rem var(--serif);margin:0 0 6px}
+.tools p{margin:0;color:var(--muted)}
+
+/* Quotes */
+blockquote{margin:0 0 24px;padding:6px 0 6px 22px;border-left:3px solid var(--purple);max-width:64ch}
+blockquote p{font:500 1.2rem/1.5 var(--serif);margin:0 0 6px}
+blockquote cite{color:var(--muted);font-style:normal;font-size:.95rem}
+
+/* CTA */
+.cta{text-align:left;background:var(--ink);color:var(--bg);border-radius:20px;padding:56px 40px;margin:72px 0 0}
+.cta h2{margin-bottom:10px}
+.cta p{max-width:52ch;margin:0 0 26px;opacity:.8}
+.cta .btn{border-color:var(--bg)}
+.cta .btn.primary{background:var(--bg);color:var(--ink)}
+.cta .btn.primary:hover{background:#c9b3f5;border-color:#c9b3f5;color:#141218}
+.cta .btn.ghost{color:var(--bg)}
+.cta .btn.ghost:hover{background:rgba(255,255,255,.12)}
+footer{padding:36px 0 56px;color:var(--muted);font-size:.95rem}
+footer a{margin-right:18px}
+
+/* Modal */
+dialog{border:1px solid var(--line);border-radius:16px;padding:32px;max-width:520px;width:calc(100% - 32px);background:var(--bg);color:var(--ink)}
+dialog::backdrop{background:rgba(12,10,16,.6)}
+dialog h3{font:700 1.5rem var(--serif);margin:0 0 6px}
+dialog ul{padding-left:20px;margin:16px 0}
+dialog .focus{color:var(--muted)}
+dialog button{margin-top:8px;font:700 1rem var(--sans);padding:12px 20px;border-radius:10px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+dialog button:hover{background:var(--soft)}
+@media(max-width:600px){section{padding:56px 0}.cta{padding:40px 24px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">FOUNDER &amp; LEAD SEO STRATEGIST • NKD DIGITAL SOLUTIONS PH</span>
+    <h1>Norine Kim Dowing</h1>
+    <p class="sub">Connecting search intelligence, journalism-grade content, and conversion web architecture to help growing brands earn lasting visibility.</p>
+    <p class="bio">With a background in Journalism and 4+ years of experience supporting 50+ international brands across finance, SaaS, and e-commerce, I founded NKD Digital Solutions PH to bring human accountability back to digital growth. Alongside leading client strategy, I actively mentor Filipina women building independent careers in the global digital economy.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://nkddigitalsolutions.com">Work With My Agency →</a>
+      <a class="btn ghost" href="#samples">Explore Writing &amp; SEO Samples ↓</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="background">
+  <div class="wrap">
+    <h2>Background &amp; credentials</h2>
+    <p class="lead">From operations to editorial strategy to running an agency.</p>
+    <ul class="timeline">
+      <li><span class="when">2023 – Present</span><div class="role">Founder &amp; Lead Strategist, NKD Digital Solutions PH</div><p>Directing SEO, human-verified editorial systems, and CMS growth for global and regional clients.</p></li>
+      <li><span class="when">2023 – 2025</span><div class="role">SEO Specialist &amp; Content Strategist</div><p>Executed keyword architecture, search-intent copywriting, and on-page optimization for competitive international niches.</p></li>
+      <li><span class="when">2022</span><div class="role">Executive &amp; Digital Operations Assistant</div><p>Built the operational, research, and client-communication foundation behind my agency workflows.</p></li>
+    </ul>
+    <div class="edu"><strong>Education:</strong> BA in Mass Communication, Major in Journalism (2023) &nbsp;•&nbsp; Semrush Certified in SEO &amp; Keyword Research</div>
+  </div>
+</section>
+
+<section id="philosophy" class="philo">
+  <div class="wrap">
+    <h2>Editorial philosophy</h2>
+    <p class="quote">Easier to find. Easier to understand. Built to be trusted.</p>
+    <p>Anyone can publish 50 AI-generated pages a week. Very few can build digital assets that rank on Google, survive algorithm updates, and earn a buyer's trust. My journalism training taught me to verify every source; my SEO experience taught me how to make that truth discoverable.</p>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <h2>Client &amp; publication experience</h2>
+    <p class="lead">Select a sector to see the brands and what I delivered.</p>
+    <div class="grid">
+      <button class="card" data-modal="m-fin"><span class="tag">Financial &amp; Trading</span><h3>Blueberry Markets · FXPrimus · TIO Markets</h3><p>High-accuracy financial SEO content.</p></button>
+      <button class="card" data-modal="m-eco"><span class="tag">E-Commerce &amp; Consumer</span><h3>Avalon King · Case Monkey · Forma</h3><p>Product-led content and organic growth.</p></button>
+      <button class="card" data-modal="m-saas"><span class="tag">Health, SaaS &amp; Agencies</span><h3>Aura Health · Blue Crocus Solutions · Nakada Design</h3><p>Technical on-page SEO and authority building.</p></button>
+    </div>
+  </div>
+</section>
+
+<section id="samples">
+  <div class="wrap">
+    <h2>Writing &amp; strategy samples</h2>
+    <p class="lead">Published work and working documents. Journalism-trained writing, built for search.</p>
+    <div class="grid">
+      <!-- Replace each href="#" with the real link to your article, brief, or tear-down -->
+      <a class="card sample" href="#"><span class="tag">Published article</span><h3>[Article title]</h3><p>One line on the topic, the audience, and the result.</p><span class="go">Read Sample →</span></a>
+      <a class="card sample" href="#"><span class="tag">SEO brief</span><h3>[Brief title]</h3><p>Keyword targets, search intent, and outline.</p><span class="go">Read Sample →</span></a>
+      <a class="card sample" href="#"><span class="tag">Website tear-down</span><h3>[Site audited]</h3><p>What was found, what was fixed, what changed.</p><span class="go">Read Sample →</span></a>
+      <a class="card sample" href="https://www.instagram.com/norine.writes"><span class="tag">Ongoing writing</span><h3>@norine.writes</h3><p>Short-form writing and commentary on Instagram.</p><span class="go">Read Sample →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Tools I use</h2>
+    <p class="lead">Grouped by the job they do.</p>
+    <div class="tools">
+      <div><h3>Search &amp; Intelligence</h3><p>Semrush, Ahrefs, Google Search Console, GA4</p></div>
+      <div><h3>CMS &amp; Web</h3><p>WordPress, Webflow, Shopify</p></div>
+      <div><h3>AI &amp; Editorial Workflows</h3><p>Claude, ChatGPT, Notion</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="endorsements">
+  <div class="wrap">
+    <h2>Client &amp; colleague endorsements</h2>
+    <p class="lead">On reliability, writing quality, and SEO execution.</p>
+    <blockquote><p>“[Paste Tyler D.'s quote here]”</p><cite>Tyler D.</cite></blockquote>
+    <blockquote><p>“[Real feedback from a client, editor, or collaborator]”</p><cite>Name, role, company</cite></blockquote>
+    <blockquote><p>“[Real feedback from a client, editor, or collaborator]”</p><cite>Name, role, company</cite></blockquote>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="cta">
+    <h2>Let's look at your site together.</h2>
+    <p>Founder-led, human-verified, and accountable from audit to results.</p>
+    <div class="btns">
+      <!-- Point both to your agency booking page -->
+      <a class="btn primary" href="https://nkddigitalsolutions.com">Book a Strategy Call with Norine</a>
+      <a class="btn ghost" href="https://nkddigitalsolutions.com">Request a Founder-Led Site Audit</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="https://nkddigitalsolutions.com">nkddigitalsolutions.com</a>
+    <a href="https://www.instagram.com/nkdds.media">@nkdds.media</a>
+    <a href="https://www.instagram.com/norine.writes">@norine.writes</a>
+    <a href="https://www.instagram.com/norineseo.me">@norineseo.me</a>
+    <p>© <span id="y"></span> Norine Kim Dowing • NKD Digital Solutions PH</p>
+  </div>
+</footer>
+
+<dialog id="m-fin"><h3>Financial &amp; Trading</h3><p>Blueberry Markets • FXPrimus • TIO Markets</p><ul><li>High-accuracy financial SEO content</li><li>Search intent mapping</li><li>Compliance-aware editorial</li></ul><button>Close</button></dialog>
+<dialog id="m-eco"><h3>E-Commerce &amp; Consumer Brands</h3><p>Avalon King • Case Monkey • Forma</p><ul><li>Product-led content</li><li>CMS optimization</li><li>Organic traffic growth</li></ul><button>Close</button></dialog>
+<dialog id="m-saas"><h3>Health, SaaS &amp; Agencies</h3><p>Aura Health • Blue Crocus Solutions • Nakada Design</p><ul><li>Technical on-page SEO</li><li>Authority building</li><li>Web content architecture</li></ul><button>Close</button></dialog>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+document.querySelectorAll('[data-modal]').forEach(function(b){
+  b.addEventListener('click',function(){document.getElementById(b.dataset.modal).showModal()});
+});
+document.querySelectorAll('dialog').forEach(function(d){
+  d.querySelector('button').addEventListener('click',function(){d.close()});
+  d.addEventListener('click',function(e){if(e.target===d)d.close()});
+});
+</script>
+</body>
+</html>
